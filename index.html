@@ -8,67 +8,73 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+    </style>
 </head>
 
 <body>
-    <div class="background">
-        <div class="container mt-5">
+    <div class="Header">
 
-            <!-- Section to display input values -->
+    </div>
+    <div class="background">
+        <div class="container mt-5 position-relative">
+            <div id="messageBox" class="message-box bottom-left arrow-left" style="--bbColor:#536673"></div>
             <div id="inputValues"></div>
 
             <form id="taxForm">
+
                 <div class="form-group">
-                    <label for="income">Gross Annual Income (Lakhs):<i class="far fa-question-circle ml-2 question-icon"
-                            data-content="Enter your gross annual income in lakhs"></i></label>
-                    <input type="" class="form-control" id="income">
+
+
+                    <label for="income">Enter gross annual Income<i class="far fa-question-circle ml-2 question-icon"
+                            onclick="showMessage('Enter your gross annual income in lakhs', this, true)"></i></label>
+                    <input type="" class="form-control" id="income" placeholder="Enter gross annual income">
                     <i class="fa fa-exclamation-circle error-icon" aria-hidden="true"
+                        onclick="showMessage('Please enter numbers only', this, true)"
                         title="Please enter numbers only"></i>
                 </div>
                 <div class="form-group">
-                    <label for="extraIncome">Extra Income (Lakhs):<i class="far fa-question-circle ml-2 question-icon"
-                            data-content="Enter any extra income in lakhs"></i></label>
-                    <input type="" class="form-control" id="extraIncome">
+                    <label for="extraIncome">Enter extra income<i class="far fa-question-circle ml-2 question-icon"
+                            onclick="showMessage('Enter any extra income in lakhs', this, true)"></i></label>
+                    <input type="" class="form-control" id="extraIncome"
+                        placeholder="Enter extra income from other sources">
                     <i class="fa fa-exclamation-circle error-icon" aria-hidden="true"
+                        onclick="showMessage('Please enter numbers only', this, true)"
                         title="Please enter numbers only"></i>
                 </div>
                 <div class="form-group">
-                    <label type="" for="age">Age:<i class="far fa-question-circle ml-2 question-icon"
-                            data-content="Enter your age group"></i></label>
+                    <label type="" for="age">Enter age group:<i class="far fa-question-circle ml-2 question-icon"
+                            onclick="showMessage('Enter your age group', this, true)"></i></label>
                     <select class="form-control" id="age">
                         <option value="">Select Age Group</option>
                         <option value="<40">&lt; 40</option>
                         <option value="≥40&<60">&ge; 40 &lt; 60</option>
                         <option value="≥60">&ge; 60</option>
                     </select>
-                    <i class="fa fa-exclamation-circle error-icon" aria-hidden="true" title="Age is required"></i>
+                    <i class="fa fa-exclamation-circle error-icon" aria-hidden="true"
+                        onclick="showMessage('Age is required', this, true)" title="Age is required"></i>
                 </div>
                 <div class="form-group">
-                    <label for="deductions">Deductions (Lakhs):<i class="far fa-question-circle ml-2 question-icon"
-                            data-content="Enter any deductions in lakhs"></i></label>
-                    <input type="" class="form-control" id="deductions">
+                    <label for="deductions">Enter total applicable deductions<i
+                            class="far fa-question-circle ml-2 question-icon"
+                            onclick="showMessage('Enter any deductions in lakhs', this, true)"></i></label>
+                    <input type="" class="form-control" id="deductions" placeholder="Add total application deductions">
                     <i class="fa fa-exclamation-circle error-icon" aria-hidden="true"
+                        onclick="showMessage('Please enter numbers only', this, true)"
                         title="Please enter numbers only"></i>
                 </div>
                 <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
             </form>
         </div>
     </div>
-    <!-- Modal -->
-    <div class="model">
-        <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body" id="modalBody"></div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+    <!-- Result Modal -->
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body" id="modalBody"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -77,8 +83,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="scripts.js">
-    </script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
