@@ -1,161 +1,143 @@
+/* Add some spacing and alignment adjustments */
+body {
+    padding-top: 50px;
+    background-color: white;
+}
 
-        /* Add some spacing and alignment adjustments */
-        body {
-            padding-top: 50px;
-            background-color: #FFFFFF;
-        }
+.container {
+    max-width: 400px;
+    background-color: #FFFFFF;
+    margin: 0 auto; 
+    padding: 0 15px; 
+}
 
-        .container {
-            max-width: 400px;
-            background-color: #FFFFFF;
+#resultModal {
+    background-color: transparent;
+    border: 2px solid #A4B3BF;
+}
 
-        }
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
 
-        #resultModal {
-            background-color: transparent;
-            border: 2px solid #A4B3BF;
+.error-icon {
+    display: none;
+    color: red;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+}
 
+.btn-primary {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%; 
+}
 
-        }
+.modal-content {
+    border-radius: 10px;
+}
 
-        .form-group {
-            position: relative;
-        }
+.form-control {
+    border: 2px solid #A4B3BF;
+}
 
-        /* Improve error icon positioning */
-        .error-icon {
-            display: none;
-            color: red;
-            position: absolute;
-            top: 70%;
-            transform: translateY(-50%);
-            right: 5px;
-        }
+.modal-header {
+    border-bottom: none;
+}
 
-        /* Style the submit button */
-        .btn-primary {
-            margin-top: 20px;
-            padding: 10px 20px;
-            border-radius: 5px;
-            width: 365px;
-        }
+.modal-footer {
+    border-top: none;
+}
 
-        /* Style the modal */
-        .modal-content {
-            border-radius: 10px;
-        }
+.modal-title {
+    font-weight: bold;
+}
 
-        .form-control {
-            border: 2px solid #A4B3BF;
+.modal-body p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
 
+#taxForm {
+    width: 100%;
+}
 
-        }
+label {
+    color: #253540;
+}
 
-        .modal-header {
-            border-bottom: none;
-        }
+.background {
+    max-width: 400px;
+    border: 2px solid #A4B3BF;
+    margin: 20px auto; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
 
-        .modal-footer {
-            border-top: none;
-        }
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+}
 
-        /* Style the result modal title */
-        .modal-title {
-            font-weight: bold;
-        }
+.modal-content {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF;
+}
 
-        /* Style the result text in the modal */
-        .modal-body p {
-            font-size: 18px;
-            margin-bottom: 0;
-        }
+.modal-body {
+    padding: 20px;
+}
 
-        #taxForm {
-            width: 100%;
-        }
+.modal-footer {
+    border-top: none;
+}
 
-        label {
-            color: #253540;
+.close {
+    color: #fff;
+    opacity: 1;
+    background-color: #615CF2;
+}
 
+.close:hover {
+    opacity: 0.75;
+}
 
-        }
+.btn-secondary {
+    background-color: #615CF2;
+}
 
-        .background {
-            max-width: 400px;
-            border: 2px solid #A4B3BF;
-            margin-left: 35%;
-            margin-top: 5%;
-            margin-bottom: 2%;
-            height: 500px;
-        }
+.btn-primary {
+    background-color: #615CF2;
+}
 
-        /* Center the modal */
-        .modal-dialog {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 15%;
-            background-color: #FFFFFF;
+.text-center,
+h4,
+h5 {
+    font-weight: bold;
+    text-align: center;
+}
 
-        }
+.model {
+    border: 2px solid #A4B3BF;
+}
 
-        /* Style the modal */
-        .modal-content {
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
 
-            background-color: #FFFFFF;
+    .background {
+        max-width: calc(100% - 40px); 
+        margin: 20px auto; 
+    }
 
-        }
-
-
-
-        .modal-body {
-            padding: 20px;
-            background-color: #FFFFFF;
-
-        }
-
-        .modal-footer {
-            border-top: none;
-            margin-right: 45%;
-            background-color: #FFFFFF;
-
-        }
-
-        /* Style the close button */
-        .close {
-            color: #fff;
-            opacity: 1;
-            margin-right: 300px;
-            background-color: #615CF2;
-
-        }
-
-        .close:hover {
-            opacity: 0.75;
-            background-color: #615CF2;
-
-        }
-
-        .btn-secondary {
-            background-color: #615CF2;
-        }
-        .btn-primary{
-            background-color: #615CF2;
-
-        }
-
-
-
-        .text-center,
-        h4,
-        h5 {
-            font-weight: bold;
-            text-align: center;
-
-        }
-        .model{
-            border: 2px solid #A4B3BF;
-
-
-        }
+    .btn-primary {
+        width: 100%; 
+    }
+}
