@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    // Initialize popover for question icon
     $('.question-icon').popover({
         placement: 'top',
         trigger: 'click',
@@ -8,13 +7,11 @@ $(document).ready(function () {
 });
 
 function submitForm() {
-    // Retrieve inputs
     const age = $('#age').val();
     const income = parseFloat($('#income').val());
     const extraIncome = parseFloat($('#extraIncome').val());
     const deductions = parseFloat($('#deductions').val());
 
-    // Validate inputs
     let hasError = false;
     if (!age) {
         setError('age', 'Age is required');
@@ -36,15 +33,12 @@ function submitForm() {
         return;
     }
 
-    // Clear any existing errors
     clearErrors();
 
-    // Calculate taxable income
     const overallIncome = income + extraIncome - deductions;
     let tax = 0;
     let taxMessage = '';
 
-    // Calculate tax based on age group and taxable income
     if (overallIncome > 800000) {
         const taxableIncome = overallIncome - 800000;
         switch (age) {
@@ -63,12 +57,10 @@ function submitForm() {
         taxMessage = 'You do not have to pay any income tax.';
     }
 
-    // Display result
     $('#modalBody').html(`<p>${taxMessage}</p>`);
     $('#resultModal').modal('show');
 }
 
-// Function to set error message
 function setError(inputId, message) {
     const input = $(`#${inputId}`);
     const errorIcon = input.next('.error-icon');
@@ -76,7 +68,6 @@ function setError(inputId, message) {
     errorIcon.attr('title', message);
 }
 
-// Function to clear error messages
 function clearErrors() {
     $('.error-icon').css('display', 'none');
     $('.error-icon').attr('title', '');
