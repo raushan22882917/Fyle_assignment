@@ -33,4 +33,4 @@ This project is a Tax Calculator web application designed to help users estimate
 Contributions are welcome! Please feel free to fork the repository and submit pull requests to contribute new features, enhancements, or bug fixes.
 ##output:
 ![Tax Calculator](https://github.com/raushan22882917/Fyle_assignment/blob/main/Screenshot%202024-04-11%20172730.png)
-![Tax Calculator](https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif)
+![Tax Calculator](https://github.com/raushan22882917/Fyle_assignment/blob/main/Screenshot%202024-04-11%20172745.png)
