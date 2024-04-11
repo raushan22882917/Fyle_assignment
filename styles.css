@@ -95,6 +95,8 @@ label {
     align-items: center;
     justify-content: center;
     margin-top: 15%;
+    opacity: 0.8;
+
 }
 
 .modal-content {
@@ -110,6 +112,7 @@ label {
 .modal-footer {
     border-top: none;
     background-color: rgb(236, 232, 232);
+
 
 }
 
