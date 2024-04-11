@@ -27,6 +27,7 @@ This project is a Tax Calculator web application designed to help users estimate
 - `styles.css`: CSS file for styling.
 - `scripts.js`: JavaScript file containing the logic for the application.
 - `README.md`: This file providing information about the project.
+![Tax Calculator](https://main--taxc.netlify.app/)
 
 ## Contributing
 
@@ -34,3 +35,4 @@ Contributions are welcome! Please feel free to fork the repository and submit pu
 ##output:
 ![Tax Calculator](https://github.com/raushan22882917/Fyle_assignment/blob/main/Screenshot%202024-04-11%20172730.png)
 ![Tax Calculator](https://github.com/raushan22882917/Fyle_assignment/blob/main/Screenshot%202024-04-11%20172745.png)
+
