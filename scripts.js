@@ -40,7 +40,7 @@ function submitForm() {
     let taxMessage = '';
 
     if (overallIncome > 800000) {
-        const taxableIncome = overallIncome - 800000;
+        const taxableIncome = income - 800000;
         switch (age) {
             case '<40':
                 tax = taxableIncome * 0.3;
@@ -52,7 +52,7 @@ function submitForm() {
                 tax = taxableIncome * 0.1;
                 break;
         }
-        taxMessage = `<h3 class="text-center">Your Overall income will be</h3><h4>${taxableIncome.toFixed(2)}₹</h4><h5>after tax detection.</h5>`;
+        taxMessage = `<h3 class="text-center">Your Overall income will be</h3><h4>${income.toFixed(2)-tax}₹</h4><h5>after tax detection.</h5>`;
     } else {
         taxMessage = `<h4 class="text-center">You do not have to pay any income tax</h4><h5>Total Income:${overallIncome.toFixed(2)}₹</h5>.`;
     }
