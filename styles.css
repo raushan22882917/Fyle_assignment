@@ -1,0 +1,161 @@
+
+        /* Add some spacing and alignment adjustments */
+        body {
+            padding-top: 50px;
+            background-color: #FFFFFF;
+        }
+
+        .container {
+            max-width: 400px;
+            background-color: #FFFFFF;
+
+        }
+
+        #resultModal {
+            background-color: transparent;
+            border: 2px solid #A4B3BF;
+
+
+        }
+
+        .form-group {
+            position: relative;
+        }
+
+        /* Improve error icon positioning */
+        .error-icon {
+            display: none;
+            color: red;
+            position: absolute;
+            top: 70%;
+            transform: translateY(-50%);
+            right: 5px;
+        }
+
+        /* Style the submit button */
+        .btn-primary {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 365px;
+        }
+
+        /* Style the modal */
+        .modal-content {
+            border-radius: 10px;
+        }
+
+        .form-control {
+            border: 2px solid #A4B3BF;
+
+
+        }
+
+        .modal-header {
+            border-bottom: none;
+        }
+
+        .modal-footer {
+            border-top: none;
+        }
+
+        /* Style the result modal title */
+        .modal-title {
+            font-weight: bold;
+        }
+
+        /* Style the result text in the modal */
+        .modal-body p {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+        #taxForm {
+            width: 100%;
+        }
+
+        label {
+            color: #253540;
+
+
+        }
+
+        .background {
+            max-width: 400px;
+            border: 2px solid #A4B3BF;
+            margin-left: 35%;
+            margin-top: 5%;
+            margin-bottom: 2%;
+            height: 500px;
+        }
+
+        /* Center the modal */
+        .modal-dialog {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15%;
+            background-color: #FFFFFF;
+
+        }
+
+        /* Style the modal */
+        .modal-content {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+            background-color: #FFFFFF;
+
+        }
+
+
+
+        .modal-body {
+            padding: 20px;
+            background-color: #FFFFFF;
+
+        }
+
+        .modal-footer {
+            border-top: none;
+            margin-right: 45%;
+            background-color: #FFFFFF;
+
+        }
+
+        /* Style the close button */
+        .close {
+            color: #fff;
+            opacity: 1;
+            margin-right: 300px;
+            background-color: #615CF2;
+
+        }
+
+        .close:hover {
+            opacity: 0.75;
+            background-color: #615CF2;
+
+        }
+
+        .btn-secondary {
+            background-color: #615CF2;
+        }
+        .btn-primary{
+            background-color: #615CF2;
+
+        }
+
+
+
+        .text-center,
+        h4,
+        h5 {
+            font-weight: bold;
+            text-align: center;
+
+        }
+        .model{
+            border: 2px solid #A4B3BF;
+
+
+        }
