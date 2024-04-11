@@ -1,5 +1,7 @@
 # Tax Calculator Web Application
 
+![Tax Calculator](https://drive.google.com/file/d/1spncbGIDawkup_usRBhS-6WY-WKyvtSu/view?usp=sharing)
+
 This project is a Tax Calculator web application designed to help users estimate their tax liability based on their financial information. Users can input various parameters such as gross annual income, extra income, age group, and applicable deductions to calculate their taxes.
 
 ## Assumptions
