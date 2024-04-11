@@ -31,3 +31,6 @@ This project is a Tax Calculator web application designed to help users estimate
 ## Contributing
 
 Contributions are welcome! Please feel free to fork the repository and submit pull requests to contribute new features, enhancements, or bug fixes.
+##output:
+![Tax Calculator](https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif)
+![Tax Calculator](https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif)
