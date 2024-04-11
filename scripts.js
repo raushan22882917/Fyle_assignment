@@ -52,10 +52,11 @@ function submitForm() {
                 tax = taxableIncome * 0.1;
                 break;
         }
-        taxMessage = `<h3 class="text-center">Your Overall income will be</h3> <br> <h4>${taxableIncome.toFixed(2)}₹</h4> <br> <h5>after tax detection.</h5>`;
+        taxMessage = `<h3 class="text-center">Your Overall income will be</h3><h4>${taxableIncome.toFixed(2)}₹</h4><h5>after tax detection.</h5>`;
     } else {
-        taxMessage = 'You do not have to pay any income tax.';
+        taxMessage = `<h3 class="text-center">You do not have to pay any income tax</h3><h4>${overallIncome.toFixed(2)}</h4>.`;
     }
+    
 
     $('#modalBody').html(`<p>${taxMessage}</p>`);
     $('#resultModal').modal('show');
@@ -71,4 +72,20 @@ function setError(inputId, message) {
 function clearErrors() {
     $('.error-icon').css('display', 'none');
     $('.error-icon').attr('title', '');
+}
+
+
+
+
+function showMessage(message, element, show) {
+    var messageBox = document.getElementById('messageBox');
+    messageBox.innerText = message;
+    var iconRect = element.getBoundingClientRect();
+    if (show) {
+        messageBox.style.display = 'block';
+        messageBox.style.top = (iconRect.top - messageBox.offsetHeight) + 'px';
+        messageBox.style.left = (iconRect.left + (iconRect.width / 2) - (messageBox.offsetWidth / 2)) + 'px';
+    } else {
+        messageBox.style.display = 'none';
+    }
 }
