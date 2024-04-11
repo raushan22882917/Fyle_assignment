@@ -1,6 +1,4 @@
-/* Add some spacing and alignment adjustments */
 body {
-    padding-top: 50px;
     background-color: white;
 }
 
@@ -12,20 +10,28 @@ body {
 }
 
 #resultModal {
-    background-color: transparent;
     border: 2px solid #A4B3BF;
+    background-color: transparent;
 }
 
 .form-group {
     position: relative;
     margin-bottom: 20px;
 }
+.Header{
+    width: 100%;
+    height: 30px;
+    background-color: #A4B3BF;
+}
+br{
+    margin-top:5px;
+}
 
 .error-icon {
     display: none;
-    color: red;
+    color:#A4B3BF ;
     position: absolute;
-    top: 50%;
+    top: 70%;
     transform: translateY(-50%);
     right: 5px;
 }
@@ -47,10 +53,13 @@ body {
 
 .modal-header {
     border-bottom: none;
+    background-color: #FFFFFF;
+
 }
 
 .modal-footer {
     border-top: none;
+    background-color: #FFFFFF;
 }
 
 .modal-title {
@@ -60,6 +69,8 @@ body {
 .modal-body p {
     font-size: 18px;
     margin-bottom: 0;
+    background-color: #FFFFFF;
+
 }
 
 #taxForm {
@@ -68,6 +79,7 @@ body {
 
 label {
     color: #253540;
+    font-weight: bold;
 }
 
 .background {
@@ -86,8 +98,9 @@ label {
 }
 
 .modal-content {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    background-color: #FFFFFF;
+    background-color: rgb(236, 232, 232);
+    border: 2px solid #A4B3BF;
+
 }
 
 .modal-body {
@@ -96,6 +109,8 @@ label {
 
 .modal-footer {
     border-top: none;
+    background-color: rgb(236, 232, 232);
+
 }
 
 .close {
@@ -116,15 +131,27 @@ label {
     background-color: #615CF2;
 }
 
-.text-center,
-h4,
-h5 {
+.text-center
+{
     font-weight: bold;
     text-align: center;
+}
+h4{
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
+
+}
+h5{
+    font-size:14px;
+    font-weight: bold;
+    text-align: center;
+
 }
 
 .model {
     border: 2px solid #A4B3BF;
+    background-color: red;
 }
 
 @media screen and (max-width: 576px) {
@@ -139,5 +166,113 @@ h5 {
 
     .btn-primary {
         width: 100%; 
+    }
+}
+
+
+.card {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-body h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+.card-body h4,
+.card-body h5 {
+    margin: 0; /* Remove margin */
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+
+
+.message-box,
+.message-box * {
+    box-sizing: border-box;
+    color: white;
+}
+
+.message-box {
+    --bbColor: white;
+    --bbArrowSize: 1.5rem;
+    --bbBorderRadius: 0.25rem;
+    --bbPadding: 1rem;
+    background: var(--bbColor);
+    border-radius: var(--bbBorderRadius);
+    padding: var(--bbPadding);
+    position: fixed;
+    display: none;
+    max-width: 200px;
+    z-index: 9999;
+}
+
+.message-box::before {
+    content: '';
+    position: absolute;
+    background: var(--bbColor);
+}
+
+.message-box.bottom-left {
+    margin-bottom: var(--bbArrowSize)
+}
+
+.message-box.bottom-left::before {
+    top: calc(100% - 2px);
+    --width: calc(var(--bbArrowSize) / 2 * 2);
+    height: var(--bbArrowSize);
+    width: var(--width);
+}
+
+.message-box.bottom-left.arrow-left::before {
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(25% 0, 100% 0, 0% 100%)
+}
+
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .background {
+        max-width: calc(100% - 40px); 
+        margin: 20px auto; 
+    }
+
+    .btn-primary {
+        width: 100%; 
+    }
+
+    .card {
+        max-width: calc(100% - 40px); 
+        margin: 20px auto; 
+        box-shadow: none; 
+        border: none; 
+    }
+
+    .card-body {
+        padding: 15px; 
+    }
+
+    .card-body h3 {
+        font-size: 1.3rem; 
+    }
+
+    .card-body h4,
+    .card-body h5 {
+        font-size: 1rem; 
     }
 }
